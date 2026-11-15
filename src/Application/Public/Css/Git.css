@@ -1,4 +1,4 @@
-section[name="application-ollama-manager"] .dialog {
+section[name="application-git-manager"] .dialog {
     width: calc(100% - 250px);
     min-width: 640px;
     height: calc(100% - 100px);
@@ -6,10 +6,10 @@ section[name="application-ollama-manager"] .dialog {
     top: 50px;
 }
 
-section[name="application-ollama-manager"] {
+section[name="application-git-manager"] {
 }
 
-section[name="application-ollama-manager"] .menu-application-ollama-manager {
+section[name="application-git-manager"] .menu-application-git-manager {
     background: rgba(225, 225, 225, 1);
     border-top: 1px solid rgba(200, 200, 200, 1);
     height: 19px;
@@ -18,32 +18,32 @@ section[name="application-ollama-manager"] .menu-application-ollama-manager {
     cursor: default;
 }
 
-section[name="application-ollama-manager"] .menu-application-ollama-manager ul {
+section[name="application-git-manager"] .menu-application-git-manager ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-section[name="application-ollama-manager"] .menu-application-ollama-manager li {
+section[name="application-git-manager"] .menu-application-git-manager li {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
 }
 
-section[name="application-ollama-manager"] .menu-application-ollama-manager li.active {
+section[name="application-git-manager"] .menu-application-git-manager li.active {
     background: rgba(255, 124, 13, 1);
 }
 
-section[name="application-ollama-manager"] .menu-application-ollama-manager li .close:hover {
+section[name="application-git-manager"] .menu-application-git-manager li .close:hover {
     color: rgba(255, 0, 0, 1);
 }
 
-section[name="application-ollama-manager"] .menu-application-ollama-manager li .has-changed {
+section[name="application-git-manager"] .menu-application-git-manager li .has-changed {
     margin-left: 10px;
 }
 
-section[name="application-ollama-manager"] .body {
+section[name="application-git-manager"] .body {
     height: calc(100% - 100px);
     width: 100%;
     position: relative;
@@ -51,24 +51,24 @@ section[name="application-ollama-manager"] .body {
     background: rgba(0, 33, 177, 0.4);
 }
 
-section[name="application-ollama-manager"] .body .loading {
+section[name="application-git-manager"] .body .loading {
     text-align: center;
     height: 150px;
     margin: 75px;
     padding: 0;
 }
 
-section[name="application-ollama-manager"] .body .loading i {
+section[name="application-git-manager"] .body .loading i {
     font-size: 256px;
     color: rgba(255, 124, 13, 1);
 }
 
-section[name="application-ollama-manager"] .body .loading span {
+section[name="application-git-manager"] .body .loading span {
     display: inline-block;
     margin-top: 10px;
 }
 
-section[name="application-ollama-manager"] .body .history {
+section[name="application-git-manager"] .body .history {
     width: 300px;
     height: calc(100%);
     overflow: auto;
@@ -78,7 +78,7 @@ section[name="application-ollama-manager"] .body .history {
     top: 0;
 }
 
-section[name="application-ollama-manager"] .body .history ul {
+section[name="application-git-manager"] .body .history ul {
     list-style-type: none;
     margin: 10px;
     padding: 0;
@@ -88,18 +88,18 @@ section[name="application-ollama-manager"] .body .history ul {
     overflow-y: auto;
 }
 
-section[name="application-ollama-manager"] .body .history ul p {
+section[name="application-git-manager"] .body .history ul p {
     margin: 0;
     clear: both;
     word-wrap: break-word;
 }
 
-section[name="application-ollama-manager"] .body .history p {
+section[name="application-git-manager"] .body .history p {
     width: 100%;
     box-sizing: border-box;
 }
 
-section[name="application-ollama-manager"] .body .history li {
+section[name="application-git-manager"] .body .history li {
     width: calc(100% - 22px);
     border: 1px solid rgba(255, 255, 255, 1);
     background: rgba(0, 0, 0, 0.5);
@@ -107,7 +107,7 @@ section[name="application-ollama-manager"] .body .history li {
     margin-bottom: 5px;
 }
 
-section[name="application-ollama-manager"] .body .history li.active {
+section[name="application-git-manager"] .body .history li.active {
     background: rgba(200, 226, 230, 1);
     background: rgba(39, 170, 255, 0.3);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 33, 177, 0.4));
@@ -116,7 +116,7 @@ section[name="application-ollama-manager"] .body .history li.active {
 
 }
 
-section[name="application-ollama-manager"] .body .history .name {
+section[name="application-git-manager"] .body .history .name {
     padding: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -126,11 +126,11 @@ section[name="application-ollama-manager"] .body .history .name {
     float: left;
 }
 
-section[name="application-ollama-manager"] .body .history li.active .name {
+section[name="application-git-manager"] .body .history li.active .name {
     color: rgba(255, 255, 255, 1);
 }
 
-section[name="application-ollama-manager"] .body .history .delete {
+section[name="application-git-manager"] .body .history .delete {
     color: rgba(255, 255, 255, 0.5);
     background: rgba(255, 0, 0, 0.5);
     margin: 5px;
@@ -140,35 +140,35 @@ section[name="application-ollama-manager"] .body .history .delete {
     float: right;
 }
 
-section[name="application-ollama-manager"] .body .history .delete:hover {
+section[name="application-git-manager"] .body .history .delete:hover {
     color: rgba(255, 255, 255, 0.9);
     background: rgba(255, 0, 0, 0.9);
 }
 
-section[name="application-ollama-manager"] .body .history .name form {
+section[name="application-git-manager"] .body .history .name form {
     display: inline;
 }
 
-section[name="application-ollama-manager"] .body .history .name input {
+section[name="application-git-manager"] .body .history .name input {
     margin: 0;
     border: 1px solid rgba(200, 226, 230, 1);
     background: rgba(200, 226, 230, 1);
 }
 
-section[name="application-ollama-manager"] .body .history .name.error {
+section[name="application-git-manager"] .body .history .name.error {
     border: 1px solid rgba(255, 0, 0, 1);
 }
 
-section[name="application-ollama-manager"] .body .history .has-sub-dir {
+section[name="application-git-manager"] .body .history .has-sub-dir {
     display: inline-block;
     width: 20px;
 }
 
-section[name="application-ollama-manager"] .body .history .icon {
+section[name="application-git-manager"] .body .history .icon {
     margin-right: 5px;
 }
 
-section[name="application-ollama-manager"] .body .options {
+section[name="application-git-manager"] .body .options {
     width: 450px;
     padding: 10px;
     height: calc(100% - 20px);    
@@ -181,12 +181,12 @@ section[name="application-ollama-manager"] .body .options {
     border: 1px solid rgba(39, 170, 255, 1);
 }
 
-section[name="application-ollama-manager"] .body .options .fa-window-close {
+section[name="application-git-manager"] .body .options .fa-window-close {
     color: rgba(200, 0, 0, 1);
     font-size: 20px;
 }
 
-section[name="application-ollama-manager"] .body .input {
+section[name="application-git-manager"] .body .input {
     width: calc(100% - 300px);
     height: 120px;
     position: absolute;
@@ -194,7 +194,7 @@ section[name="application-ollama-manager"] .body .input {
     left: 300px;
 }
 
-section[name="application-ollama-manager"] .body .input textarea[name='prompt'] {
+section[name="application-git-manager"] .body .input textarea[name='prompt'] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 800px;
@@ -208,12 +208,12 @@ section[name="application-ollama-manager"] .body .input textarea[name='prompt'] 
     padding-right: 20px;
 }
 
-section[name="application-ollama-manager"] .body .input textarea[name='prompt']:focus-visible {
+section[name="application-git-manager"] .body .input textarea[name='prompt']:focus-visible {
     outline: none;
     box-shadow: 2px 2px rgba(39, 170, 255, 0.5);
 }
 
-section[name="application-ollama-manager"] .body .input button[name="submit"] {
+section[name="application-git-manager"] .body .input button[name="submit"] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 40px;
@@ -227,12 +227,12 @@ section[name="application-ollama-manager"] .body .input button[name="submit"] {
     top: 50px;
 }
 
-section[name="application-ollama-manager"] .body .input button[name="submit"]:hover {
+section[name="application-git-manager"] .body .input button[name="submit"]:hover {
     color: rgba(39, 170, 255, 1);
     box-shadow: 2px 2px rgba(39, 170, 255, 0.5);
 }
 
-section[name="application-ollama-manager"] .body .input button[name="options"] {
+section[name="application-git-manager"] .body .input button[name="options"] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 40px;
@@ -246,12 +246,12 @@ section[name="application-ollama-manager"] .body .input button[name="options"] {
     top: 0px;
 }
 
-section[name="application-ollama-manager"] .body .input button[name="options"]:hover {
+section[name="application-git-manager"] .body .input button[name="options"]:hover {
     color: rgba(39, 170, 255, 1);
     box-shadow: 2px 2px rgba(39, 170, 255, 0.5);
 }
 
-section[name="application-ollama-manager"] .body .input button[name="microphone"] {
+section[name="application-git-manager"] .body .input button[name="microphone"] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 40px;
@@ -265,12 +265,12 @@ section[name="application-ollama-manager"] .body .input button[name="microphone"
     top: 00px;
 }
 
-section[name="application-ollama-manager"] .body .input button[name="microphone"]:hover {
+section[name="application-git-manager"] .body .input button[name="microphone"]:hover {
     color: rgba(39, 170, 255, 1);
     box-shadow: 2px 2px rgba(39, 170, 255, 0.5);
 }
 
-section[name="application-ollama-manager"] .body .input button[name="clear-queue"] {
+section[name="application-git-manager"] .body .input button[name="clear-queue"] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 40px;
@@ -285,12 +285,12 @@ section[name="application-ollama-manager"] .body .input button[name="clear-queue
     top: 0px;
 }
 
-section[name="application-ollama-manager"] .body .input button[name="clear-queue"]:hover {
+section[name="application-git-manager"] .body .input button[name="clear-queue"]:hover {
     color: rgba(39, 170, 255, 1);
     box-shadow: 2px 2px rgba(39, 170, 255, 0.5);
 }
 
-section[name="application-ollama-manager"] .body .input button[name="clear"] {
+section[name="application-git-manager"] .body .input button[name="clear"] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 40px;
@@ -305,12 +305,12 @@ section[name="application-ollama-manager"] .body .input button[name="clear"] {
     top: 50px;
 }
 
-section[name="application-ollama-manager"] .body .input button[name="clear"]:hover {
+section[name="application-git-manager"] .body .input button[name="clear"]:hover {
     color: rgba(39, 170, 255, 1);
     box-shadow: 2px 2px rgba(39, 170, 255, 0.5);
 }
 
-section[name="application-ollama-manager"] .body .input button[name="abort"] {
+section[name="application-git-manager"] .body .input button[name="abort"] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 40px;
@@ -325,12 +325,12 @@ section[name="application-ollama-manager"] .body .input button[name="abort"] {
     top: 0px;
 }
 
-section[name="application-ollama-manager"] .body .input button[name="abort"]:hover {
+section[name="application-git-manager"] .body .input button[name="abort"]:hover {
     color: rgba(39, 170, 255, 1);
     box-shadow: 2px 2px rgba(39, 170, 255, 0.5);
 }
 
-section[name="application-ollama-manager"] .body .input select[name="model"] {
+section[name="application-git-manager"] .body .input select[name="model"] {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.5);
     width: 200px;
@@ -344,7 +344,7 @@ section[name="application-ollama-manager"] .body .input select[name="model"] {
     right: 60px;
 }
 
-section[name="application-ollama-manager"] .body .recorder {
+section[name="application-git-manager"] .body .recorder {
     position: absolute;
     top: 0;
     right: 0;
@@ -355,12 +355,12 @@ section[name="application-ollama-manager"] .body .recorder {
     overflow-x: hidden;
 }
 
-section[name="application-ollama-manager"] .body .recorder .buttons,
-section[name="application-ollama-manager"] .body .recorder article {
+section[name="application-git-manager"] .body .recorder .buttons,
+section[name="application-git-manager"] .body .recorder article {
     padding: 10px;
 }
 
-section[name="application-ollama-manager"] .body .content {
+section[name="application-git-manager"] .body .content {
     width: calc(100% - 340px);
     height: calc(100% - 165px);
     overflow: hidden;
@@ -374,12 +374,12 @@ section[name="application-ollama-manager"] .body .content {
     padding: 20px;
 }
 
-section[name="application-ollama-manager"] .body .content hr {
+section[name="application-git-manager"] .body .content hr {
     border: 0;
     border-bottom: 1px solid rgba(39, 170, 255, 1);
 }
 
-section[name="application-ollama-manager"] .body .content article pre {
+section[name="application-git-manager"] .body .content article pre {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -389,7 +389,7 @@ section[name="application-ollama-manager"] .body .content article pre {
     overflow: auto;    
 }
 
-section[name="application-ollama-manager"] .body .content article span.prompt {
+section[name="application-git-manager"] .body .content article span.prompt {
     display: inline-block;
     margin: 0;
     padding: 5px;
@@ -403,22 +403,22 @@ section[name="application-ollama-manager"] .body .content article span.prompt {
     margin-bottom: 20px;
 }
 
-section[name="application-ollama-manager"] .body .content article pre p, 
-section[name="application-ollama-manager"] .body .content article pre ul, 
-section[name="application-ollama-manager"] .body .content article pre ol,
-section[name="application-ollama-manager"] .body .content article pre table,
-section[name="application-ollama-manager"] .body .content article pre h1,
-section[name="application-ollama-manager"] .body .content article pre h2,
-section[name="application-ollama-manager"] .body .content article pre h3,
-section[name="application-ollama-manager"] .body .content article pre h4,
-section[name="application-ollama-manager"] .body .content article pre h5,
-section[name="application-ollama-manager"] .body .content article pre h6 {
+section[name="application-git-manager"] .body .content article pre p, 
+section[name="application-git-manager"] .body .content article pre ul, 
+section[name="application-git-manager"] .body .content article pre ol,
+section[name="application-git-manager"] .body .content article pre table,
+section[name="application-git-manager"] .body .content article pre h1,
+section[name="application-git-manager"] .body .content article pre h2,
+section[name="application-git-manager"] .body .content article pre h3,
+section[name="application-git-manager"] .body .content article pre h4,
+section[name="application-git-manager"] .body .content article pre h5,
+section[name="application-git-manager"] .body .content article pre h6 {
     margin: 0;
     padding: 0;        
     padding: 5px;    
 }
 
-section[name="application-ollama-manager"] .body .content .thinking {
+section[name="application-git-manager"] .body .content .thinking {
     border: 1px solid rgba(39, 170, 255, 1);
     background: rgba(0, 0, 0, 0.1);    
     border-radius: 25px;
@@ -430,46 +430,46 @@ section[name="application-ollama-manager"] .body .content .thinking {
     padding-right: 20px;
 }
 
-section[name="application-ollama-manager"] .body .content .thinking * {
+section[name="application-git-manager"] .body .content .thinking * {
     border: 0;
     background: transparent;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.0);
 }
 
-section[name="application-ollama-manager"] .body .content .thinking pre {
+section[name="application-git-manager"] .body .content .thinking pre {
     overflow: auto;
 }
 
-section[name="application-ollama-manager"] .body .content.has-upload {
+section[name="application-git-manager"] .body .content.has-upload {
     height: calc(100% - 280px);
 }
 
-section[name="application-ollama-manager"] .body .content thead {
+section[name="application-git-manager"] .body .content thead {
     font-weight: normal;
     font-size: 12px;
 }
 
-section[name="application-ollama-manager"] .body .content thead th {
+section[name="application-git-manager"] .body .content thead th {
     background: rgba(235, 235, 235, 1);
     position: sticky;
     top: 0;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
-section[name="application-ollama-manager"] .body .content table td {
+section[name="application-git-manager"] .body .content table td {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-section[name="application-ollama-manager"] .body .content table td.icon {
+section[name="application-git-manager"] .body .content table td.icon {
     width: 25px;
     text-align: center;
 }
 
-section[name="application-ollama-manager"] .body .content table tr.selected {
+section[name="application-git-manager"] .body .content table tr.selected {
     background: rgba(200, 226, 230, 1);
 }
 
-section[name="application-ollama-manager"] .body .upload {
+section[name="application-git-manager"] .body .upload {
     width: calc(100% - 300px);
     height: 250px;
     overflow: auto;
@@ -481,7 +481,7 @@ section[name="application-ollama-manager"] .body .upload {
     border-top: 2px solid rgba(255, 124, 13, 1);
 }
 
-section[name="application-ollama-manager"] .footer .speed-size {
+section[name="application-git-manager"] .footer .speed-size {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
@@ -492,7 +492,7 @@ section[name="application-ollama-manager"] .footer .speed-size {
     float: left;
 }
 
-section[name="application-ollama-manager"] .footer .speed-amount {
+section[name="application-git-manager"] .footer .speed-amount {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
@@ -503,7 +503,7 @@ section[name="application-ollama-manager"] .footer .speed-amount {
     float: left;
 }
 
-section[name="application-ollama-manager"] .footer .size {
+section[name="application-git-manager"] .footer .size {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
@@ -514,7 +514,7 @@ section[name="application-ollama-manager"] .footer .size {
     float: left;
 }
 
-section[name="application-ollama-manager"] .footer .amount {
+section[name="application-git-manager"] .footer .amount {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
@@ -525,7 +525,7 @@ section[name="application-ollama-manager"] .footer .amount {
     float: left;
 }
 
-section[name="application-ollama-manager"] .footer .queue {
+section[name="application-git-manager"] .footer .queue {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
@@ -536,7 +536,7 @@ section[name="application-ollama-manager"] .footer .queue {
     float: left;
 }
 
-section[name="application-ollama-manager"] .footer .sse-memory {
+section[name="application-git-manager"] .footer .sse-memory {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
@@ -547,7 +547,7 @@ section[name="application-ollama-manager"] .footer .sse-memory {
     float: left;
 }
 
-section[name="application-ollama-manager"] .footer .duration {
+section[name="application-git-manager"] .footer .duration {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(200, 200, 200, 1);
