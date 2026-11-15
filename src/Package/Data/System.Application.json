@@ -1,0 +1,27 @@
+{
+  "System":{
+    "Application":[
+      {
+        "name": "Git/Gui",
+        "display": {
+          "name": "Git Web"
+        },
+        "package": "raxon/git-gui",
+        "route": {
+          "name": "application-git-manager"
+        },
+        "frontend": "{{Package.Raxon.Git.Gui:Setup:install.frontend.get(options())}}",
+        "backend": "{{Package.Raxon.Git.Gui:Setup:install.backend.get(options())}}",
+        "directory": {
+          "application": "Application/{{$this.#parentNode.#parentNode.name}}/"
+        },
+        "source": {},
+        "method": null,
+        "target": null,
+        "description": "Git (version control system)",
+        "icon": "Application/{{$this.name}}/Icon/Icon.png",
+        "user": "{{Package.Raxon.Git.Gui:Setup:user.list(flags(), options(), $this)}}"
+      }
+    ]
+  }
+}

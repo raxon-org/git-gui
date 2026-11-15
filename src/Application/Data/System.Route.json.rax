@@ -1,0 +1,89 @@
+{
+    "System": {
+        "Route": [
+            {
+                "name": "application-git-manager",
+                "path": "\/Application\/Git\/Gui\/",
+                "host": "{{options('frontend.host')}}",
+                "controller": "Domain:{{app.controller.host(options('frontend.host'))}}:Application:Git:Gui:Controller:Manager:main",
+                "priority": 3001,
+                "method": [
+                    "GET",
+                    "POST"
+                ]
+            },
+            {
+                "name": "application-git-manager-address-bar",
+                "path": "\/Application\/Git\/Gui\/AddressBar\/",
+                "host": "{{options('frontend.host')}}",
+                "controller": "Domain:{{app.controller.host(options('frontend.host'))}}:Application:Git:Gui:Controller:Manager:address.bar",
+                "priority": 3002,
+                "method": [
+                    "GET",
+                    "POST"
+                ]
+            },
+            {
+                "name": "application-git-manager-list-directory",
+                "path": "\/Application\/Git\/Gui\/List\/Directory\/",
+                "host": "{{options('frontend.host')}}",
+                "controller": "Domain:{{app.controller.host(options('frontend.host'))}}:Application:Git:Gui:Controller:Manager:list.directory",
+                "priority": 3003,
+                "method": [
+                    "GET",
+                    "POST"
+                ]
+            },
+            {
+                "name": "application-git-manager-list-file",
+                "path": "\/Application\/Ollama\/Git\/List\/File\/",
+                "host": "{{options('frontend.host')}}",
+                "controller": "Domain:{{app.controller.host(options('frontend.host'))}}:Application:Git:Gui:Controller:Manager:list.file",
+                "priority": 3004,
+                "method": [
+                    "GET",
+                    "POST"
+                ]
+            },
+            {
+                "name": "application-git-manager-overview",
+                "path": "\/Application\/Git\/Gui\/Overview\/",
+                "host": "{{options('frontend.host')}}",
+                "controller": "Domain:{{app.controller.host(options('frontend.host'))}}:Application:Git:Gui:Controller:Manager:overview",
+                "priority": 3005,
+                "method": [
+                    "GET",
+                    "POST"
+                ]
+            },
+            {
+                "name": "application-git-manager-list-data",
+                "path": "\/Application\/Git\/Gui\/List\/Data\/",
+                "host": "{{options('frontend.host')}}",
+                "controller": "Domain:{{app.controller.host(options('frontend.host'))}}:Application:Git:GUi:Controller:Manager:list.data",
+                "priority": 3006,
+                "method": [
+                    "GET",
+                    "POST"
+                ]
+            },
+            {
+                "name": "application-git-manager-icon",
+                "url": "\/Application\/Git\/Gui\/Icon\/Icon.png",
+                "host": "{{options('frontend.host')}}",
+                "priority": 3007
+            },
+            {
+                "name": "application-git-sse",
+                "path": "\/Application\/Git\/Gui\/Sse\/",
+                "host": "{{options('frontend.host')}}",
+                "controller": "Domain:{{app.controller.host(options('frontend.host'))}}:Application:Git:Gui:Controller:Manager:sse",
+                "priority": 3008,
+                "method": [
+                    "GET",
+                    "POST"
+                ]
+            }
+        ]
+    }
+}

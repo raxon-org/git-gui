@@ -1,1 +1,1 @@
-# git-gui
+# ollama-gui
