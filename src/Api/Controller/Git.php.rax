@@ -1,0 +1,147 @@
+{{$options = options()}}
+<?php
+namespace Domain\{{php.namespace.host($options.backend.host)}}\Controller;
+
+use Package\Raxon\Task\Module\Status;
+use Package\Raxon\Account\Module\Permission;
+
+use Raxon\App;
+use Raxon\Config;
+
+use Raxon\Module\Core;
+use Raxon\Module\Controller;
+
+use Raxon\Module\Destination;
+use Raxon\Module\Dir;
+use Raxon\Module\File;
+
+use Raxon\Module\OutputFilter;
+use Raxon\Module\Response;
+use Raxon\Module\Route;
+use Raxon\Node\Module\Node;
+
+use Exception;
+Use Entity\Task;
+
+use Package\Raxon\Account\Exception\AuthorizationException;
+use Raxon\Exception\LocateException;
+use Raxon\Exception\UrlEmptyException;
+use Raxon\Exception\UrlNotExistException;
+use Raxon\Exception\FileWriteException;
+use Raxon\Exception\ObjectException;
+
+class Git extends Controller {
+    const DIR = __DIR__ . DIRECTORY_SEPARATOR;
+    const NAME = 'Git';
+
+    public static function scan(App $object){
+        try {
+            $role = Permission::controller(
+                $object,
+                Git::NAME,
+                __FUNCTION__,
+                $user
+            );
+            if($role){
+               $dir_list = [];
+               $dir_list[] = $object->config('project.dir.root');
+               ddd($object->config('project.dir');
+            }
+        } catch (Exception | FileWriteException | ObjectException | LocateException | UrlEmptyException | UrlNotExistException $exception){
+            return $exception;
+        }
+    }
+
+     /**
+         * @throws \Doctrine\DBAL\Exception
+         * @throws ORMException
+         */
+        public static function speech_to_text_task(App $object): array | Exception
+        {
+            try {
+                $role = Permission::controller(
+                    $object,
+                    Audio::NAME,
+                    __FUNCTION__,
+                    $user
+                );
+                if($role){
+                    //move to service Audio::speech_to_text_task
+                    $dir_model = $object->config('project.dir.asset') . 'Audio/STT/';
+                    Dir::create($dir_model, Dir::CHMOD);
+                    $whisper = Whisper::fromPretrained('tiny.en', $dir_model);
+                    //$whisper = Whisper::fromPretrained('small.en', $dir_model);
+                    $audio = readAudio($object->request('url'));
+                    $segments = $whisper->transcribe($audio, 4);
+                    // Accessing segment data
+                    $output = [];
+                    foreach ($segments as $segment) {
+                        $output[] = (object) [
+                            'segment' => $segment->segment,
+                            'text' => $segment->text,
+                            'start' => $segment->startTimestamp,
+                            'end' => $segment->endTimestamp,
+                        ];
+                    }
+                    return $output;
+                    return Core::object($output, Core::JSON);
+                    //outputfilter
+                    $list = [
+                        (object) [
+                            "uuid" => Core::uuid(),
+                            "options" => (object) [
+                                "priority" => 10,
+                                "command" => [],
+                                "controller" => [
+                                    "Package:Raxon:Audio:Output:Filter:Stt:Segment:segment.filter"
+                                ]
+                            ],
+                            "route" => "*",
+                            "#class" => "System.Output.Filter"
+                        ]
+                    ];
+                    /*
+                    OutputFilter::on($object, $list);
+                    $destination = new Destination();
+                    $route = (object) [
+                        'controller' => $object->request('controller'),
+                        'function' => $object->request('function')
+                    ];
+                    $route = Route::controller($route);
+                    $destination->set('controller',  $route->controller);
+                    $destination->set('function', $route->function);
+                    App::controller($object, $destination);
+                    $controller = $destination->get('controller');
+                    $methods = get_class_methods($controller);
+                    $function = $destination->get('function');
+                    $output = OutputFilter::trigger($object, $destination, [
+                        'methods' => $methods,
+                        'function' => $function,
+                        'response' => $output
+                    ]);
+                    ddd($output);
+                    return $output['response'] ?? [];
+                    */
+                    /*
+                    //make patch of task and update output
+                    $config = Database::config($object);
+                    $connection = $object->config('doctrine.environment.system.*');
+                    $connection->manager = Database::entity_manager($object, $config, $connection);
+                    $entity = 'Task';
+                    $node = new Node($object);
+                    $role_system = $node->role_system();
+                    $repository = $connection->manager->getRepository('\\Entity\\Task');
+                    $record = $repository->findOneBy([
+                        'uuid' => $record->uuid
+                    ]);
+                    $record-
+                    ddd($output);
+                    */
+
+                }
+            } catch (Exception | FileWriteException | ObjectException | LocateException | UrlEmptyException | UrlNotExistException $exception){
+                return $exception;
+            }
+            return [];
+        }
+}

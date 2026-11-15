@@ -92,6 +92,12 @@ menu.file = (section_id) => {
             section.remove();
         });
     }
+    const menu_file_scan = menu.select('.menu-file-scan');
+    if(menu_file_scan){
+        menu_file_scan.on('click', (event) => {
+            let url = file.data.get('route.backend.scan');
+        });
+    }
     const menu_file_demo = menu.select('.menu-file-demo');
     if(menu_file_demo){
         menu_file_demo.on('click', (event) => {

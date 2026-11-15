@@ -40,6 +40,7 @@ user.init({
 language("{{language()}}");
 translation.import("{{raw|>translation.export('json-line')}}");
 file.data.set({
+    "route.backend.scan": "{{server.url(\"{{/literal}}{{$backend.host}}{{literal}}\")}}Git/Gui/Scan/",
     "route.backend.generate": "{{server.url(\"{{/literal}}{{$backend.host}}{{literal}}\")}}Git/Generate/",
     "route.backend.tool": "{{server.url(\"{{/literal}}{{$backend.host}}{{literal}}\")}}Git/Tool/",
     "route.backend.abort": "{{server.url(\"{{/literal}}{{$backend.host}}{{literal}}\")}}Git/Abort/",

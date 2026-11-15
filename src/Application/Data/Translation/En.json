@@ -29,6 +29,7 @@
   "git.manager.clear" : "Clear conversation",
   "git.manager.clear.queue" : "Clear queue",
   "git.manager.options" : "Options",
+  "git.manager.scan" : "Scan repositories",
   "git.manager.abort" : "Abort process",
   "git.manager.demo" : "Demo file load",
   "git.manager.demo.write" : "Demo file write"
